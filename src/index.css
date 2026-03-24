@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --lux-bg: #f8f4ef;
+  --lux-card: #fffdf9;
+  --lux-primary: #e8ddd1;
+  --lux-gold: #c4a77d;
+  --lux-text: #403325;
+  --lux-muted: #79685a;
+  --lux-border: #eadfce;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100svh;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: var(--lux-text);
+  background:
+    radial-gradient(circle at top, #fdfaf6 0%, var(--lux-bg) 45%, #f2ece3 100%);
+}
+
+.serif-title {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  letter-spacing: 0.01em;
+}
+
+.lux-shell {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.lux-card {
+  background: var(--lux-card);
+  border: 1px solid var(--lux-border);
+  box-shadow:
+    0 1px 2px rgba(63, 51, 37, 0.08),
+    0 8px 24px rgba(63, 51, 37, 0.06);
+  border-radius: 1rem;
+}
+
+.lux-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--lux-border);
+  background: #fff;
+  padding: 0.55rem 0.75rem;
+  color: var(--lux-text);
+}
+
+.lux-input:focus {
+  outline: 2px solid color-mix(in srgb, var(--lux-gold) 60%, transparent);
+  outline-offset: 1px;
+}
+
+.lux-btn {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.55rem 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.lux-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.lux-btn-primary {
+  background: linear-gradient(135deg, var(--lux-primary), #f3e8db);
+  color: #3e3022;
+  border-color: #dcccb6;
+}
+
+.lux-btn-primary:hover {
+  filter: brightness(0.98);
+}
+
+.lux-btn-accent {
+  background: linear-gradient(135deg, var(--lux-gold), #d8c2a1);
+  color: #fff;
+}
+
+.lux-btn-ghost {
+  border-color: var(--lux-border);
+  background: #fff;
+  color: var(--lux-muted);
+}
+
+.app-title {
+  color: #2f2419;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  line-height: 1.1;
+}

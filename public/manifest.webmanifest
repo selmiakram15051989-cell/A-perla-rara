@@ -1,0 +1,18 @@
+{
+  "name": "A Perla Rara - Fidelisation",
+  "short_name": "A Perla Rara",
+  "description": "Application de fidelisation pour le centre facialiste expert A Perla Rara.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E8DDD1",
+  "theme_color": "#E8DDD1",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
