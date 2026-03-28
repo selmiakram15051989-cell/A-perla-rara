@@ -1,6 +1,6 @@
-# A Perla Rara - PWA Fidelisation
+# A Perla Rara - Application mobile iOS & Android
 
-Application web mobile-first (PWA) de fidelisation pour un centre facialiste expert.
+Application de fidelisation pour un centre facialiste expert, developpee en React et packagee en application native iOS/Android avec Capacitor.
 
 ## Stack
 
@@ -9,6 +9,7 @@ Application web mobile-first (PWA) de fidelisation pour un centre facialiste exp
 - Donnees locales JSON (localStorage) pour demarrage rapide
 - Service worker + manifest pour mode PWA
 - Import CSV via PapaParse
+- Capacitor pour generation d'apps mobiles natives iOS/Android
 
 ## Fonctionnalites livrees
 
@@ -61,12 +62,37 @@ Application web mobile-first (PWA) de fidelisation pour un centre facialiste exp
   - Email: `camille@example.com`
   - Mot de passe: `client123`
 
-## Lancer le projet
+## Lancer le projet (web)
 
 ```bash
 npm install
 npm run dev
 ```
+
+## Build mobile (iOS / Android)
+
+1. Generer le build web et synchroniser les plateformes natives:
+
+```bash
+npm run mobile:build
+```
+
+2. Ouvrir Android Studio:
+
+```bash
+npm run mobile:android
+```
+
+3. Ouvrir Xcode (macOS requis):
+
+```bash
+npm run mobile:ios
+```
+
+Les dossiers natifs sont deja inclus dans ce repo:
+
+- `android/`
+- `ios/`
 
 ## Verification qualite
 
@@ -74,3 +100,9 @@ npm run dev
 npm run lint
 npm run build
 ```
+
+## Reponse courte pour l'hebergeur / partenaire technique
+
+- Application frontend: **JavaScript (React)**
+- Packaging mobile: **Capacitor (iOS + Android natif)**
+- Resultat: **application compatible iPhone et Android**
